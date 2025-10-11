@@ -1,3 +1,5 @@
+
+
 html,
 body {
     height: 100%;
@@ -16,7 +18,7 @@ hr {
 }
 
 hr.light {
-    border-color: white;
+    border-color: #E4E2FD;
 }
 
 a {
@@ -35,6 +37,7 @@ h4,
 h5,
 h6 {
     @include sans-serif-font;
+    
 }
 
 p {
@@ -49,11 +52,11 @@ p {
 
 .bg-dark {
     background-color: $theme-dark;
-    color: white;
+    color: #E4E2FD;
 }
 
 .text-faded {
-    color: rgba(white, .7);
+    color: rgba(#E4E2FD, .7);
 }
 
 section {
@@ -65,14 +68,14 @@ aside {
 }
 
 .no-padding {
-    padding: 0 1vw;
+    padding: 0;
 }
 
 // Navigation
 
 .navbar-default {
-    background-color: white;
-    border-color: rgba($theme-dark, .5);
+    background-color: #E4E2FD;
+    border-color: rgba($theme-dark, 0);
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
@@ -111,24 +114,24 @@ aside {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: rgba(white, .3);
+        //border-color: rgba(#E4E2FD, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            color: rgba(#E4E2FD, .7);
             &:hover,
             &:focus {
-                color: white;
+                color: #E4E2FD;
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: rgba(#E4E2FD, .7);
             &:hover {
-                color: white;
+                color: #E4E2FD;
             }
         }
         &.affix {
-            background-color: white;
-            border-color: rgba($theme-dark, .5);
+            background-color: #E4E2FD;
+            //border-color: rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
                 color: $theme-primary;
                 font-size: 14px;
@@ -158,7 +161,7 @@ header {
     background-position: center;
     background-image: url('../img/HeaderBackground.png');
     text-align: center;
-    color: white;
+    color: #E4E2FD;
     .header-content {
         position: relative;
         text-align: center;
@@ -174,12 +177,12 @@ header {
             }
             hr {
                 margin: 30px auto;
-                border-color: white;
+                border-color: #E4E2FD;
             }
             p {
                 text-align: left;
                 font-weight: bolder;
-                color: white;
+                color: #E4E2FD;
                 font-size: 16px;
                 margin-bottom: 50px;
                 text-shadow: 0 0 5px black;
@@ -245,7 +248,7 @@ header {
     text-align: center;
     margin: 0;
     padding: 0;
-    color: white;
+    color: #E4E2FD;
 }
 
 .portfolio {
@@ -258,7 +261,7 @@ header {
     max-width: 650px;
     margin: 5px;
     .portfolio-box-caption {
-        color: white;
+        color: #E4E2FD;
         opacity: 0;
         display: block;
         background: rgba( $theme-primary, .9 );
@@ -267,6 +270,7 @@ header {
         text-align: center;
         width: 100%;
         height: 100%;
+        text-shadow: 0 0 5px black;
         @include transition-all;
         .portfolio-box-caption-content {
             width: 100%;
@@ -314,6 +318,23 @@ header {
     }
 }
 
+.contact-inner {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    @media (min-width: 992px) {
+        grid-template-columns: auto auto auto auto;
+        max-width: 80%;
+    }
+}
+
+.contact-content {
+    margin: 0 5vw;
+    text-align: center;
+    img {
+        width: 10rem;
+    }
+}
 // Bootstrap Overrides
 .text-primary {
     color: $theme-primary;
@@ -326,11 +347,11 @@ header {
 
 // Button Styles
 .btn-default {
-    @include button-variant($theme-dark, white, white);
+    @include button-variant($theme-dark, #E4E2FD, #E4E2FD);
 }
 
 .btn-primary {
-    @include button-variant(white, $theme-primary, $theme-primary);
+    @include button-variant(#E4E2FD, $theme-primary, $theme-primary);
 }
 
 .btn {
@@ -354,24 +375,24 @@ header {
 // Extras
 // -- Highlight Color Customization
 ::-moz-selection {
-    color: white;
+    color: #E4E2FD;
     text-shadow: none;
     background: $theme-dark;
 }
 
 ::selection {
-    color: white;
+    color: #E4E2FD;
     text-shadow: none;
     background: $theme-dark;
 }
 
 img::selection {
-    color: white;
+    color: #E4E2FD;
     background: transparent;
 }
 
 img::-moz-selection {
-    color: white;
+    color: #E4E2FD;
     background: transparent;
 }
 
