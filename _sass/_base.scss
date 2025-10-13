@@ -269,8 +269,16 @@ header {
     display: block;
     max-width: 650px;
     margin: 5px;
-    video::-webkit-media-controls {
+    video::-webkit-media-controls-panel {
         display:none !important;
+    }
+    video::-webkit-media-controls-play-button {
+        display: none!important;
+        -webkit-appearance: none;
+    }
+    video::-webkit-media-controls-start-playback-button {
+        display: none!important;
+        -webkit-appearance: none;
     }
     .portfolio-box-caption {
         color: #E4E2FD;
