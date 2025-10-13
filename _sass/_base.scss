@@ -269,6 +269,9 @@ header {
     display: block;
     max-width: 650px;
     margin: 5px;
+    video::-webkit-media-controls {
+        display:none !important;
+    }
     .portfolio-box-caption {
         color: #E4E2FD;
         opacity: 0;
