@@ -230,10 +230,47 @@ header {
 
 // Sections
 
+.graveyard {
+    background-color: #040707;
+    margin: 0;
+    h3, h4 {
+        color: #E4E2FD;
+    }
+}
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.marquee {
+    display: flex;
+    animation: marquee 40s linear infinite;
+}
+
+.headstone {
+    margin-right: 50px;
+    color: #E4E2FD;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 5px;
+    width: max-content;
+    height: fit-content;
+    text-align: center;
+}
+
+@keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+}
 .section-heading {
     margin-top: 0;
 }
-
 .service-box {
     max-width: 400px;
     margin: 50px auto 0;
@@ -255,6 +292,7 @@ header {
 .portfolio {
     background-color: #040707;
     padding-top: 16px;
+    margin: 0;
 }
 .portfolio-grid-container {
     display: grid;
