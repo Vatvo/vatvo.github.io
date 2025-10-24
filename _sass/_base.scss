@@ -322,7 +322,8 @@ header {
         color: #E4E2FD;
         opacity: 0;
         display: block;
-        background: rgba( $theme-primary, .9 );
+        background: rgba( $theme-primary, .8 );
+        backdrop-filter: blur(10px);
         position: absolute;
         bottom: 0;
         text-align: center;
@@ -380,6 +381,7 @@ header {
     display: grid;
     grid-template-columns: auto auto;
     margin: 0 auto;
+    
     @media (min-width: 992px) {
         grid-template-columns: auto auto auto auto;
         max-width: 80%;
