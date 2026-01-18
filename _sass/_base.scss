@@ -44,6 +44,7 @@ h6 {
 }
 
 p {
+    @include serif-font;
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -79,7 +80,7 @@ aside {
 .navbar-default {
     background-color: #E4E2FD;
     border-color: rgba($theme-dark, 0);
-    @include sans-serif-font;
+    @include victor-font;
     @include transition-all;
     .navbar-header .navbar-brand {
         color: $theme-primary;
@@ -250,10 +251,11 @@ header {
 
 .marquee {
     display: flex;
-    animation: marquee 40s linear infinite;
+    animation: marquee 80s linear infinite;
 }
 
 .headstone {
+    @include victor-font;
     margin-right: 50px;
     color: #E4E2FD;
     padding: 10px 20px;
@@ -343,7 +345,7 @@ header {
             transform: translateY(-50%);
             .project-category,
             .project-name {
-                @include sans-serif-font;
+                @include victor-font;
                 padding: 0 15px;
             }
             .project-category {
@@ -426,7 +428,7 @@ header {
             transform: translateY(-50%);
             .project-category,
             .project-name {
-                @include sans-serif-font;
+                @include victor-font;
                 padding: 0 15px;
             }
             .project-category {
