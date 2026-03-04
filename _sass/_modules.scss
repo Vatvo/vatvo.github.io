@@ -82,15 +82,3 @@
         padding: 40px 5%;
     }
 }
-
-#resume {
-    width: 70%;
-    height: 90vh;
-    margin: 5vh 0;
-    border-radius: 10px;
-
-    @media (max-width: 992px) {
-        height: 70vh;
-        margin: 15vh 0;
-    }
-}
