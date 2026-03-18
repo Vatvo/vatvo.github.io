@@ -33,7 +33,7 @@
     </div>
 </section>
 
-<section id="contact-form">
+<section id="form">
      <div class="row">
       <div class="col-md-9 mb-md-0 mb-5">
           <form id="contact-form" name="contact-form" action="mailto:jharnar@vivaldi.net" method="POST">
@@ -81,3 +81,25 @@
 
   </div>
 </section>
+
+<script>
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+        console.log("Bam")
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+
+        const body = encodeURIComponent(
+            "Name: " + name + "\n" +
+            "Email: " + email + "\n\n" +
+            message
+        );
+
+        const mailtoLink = `mailto:jharnar@vivaldi.net?subject=${subject}&body=${body}`;
+
+        window.location.href = mailtoLink;
+    });
+</script>
